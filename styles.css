@@ -27,13 +27,13 @@ h1 {
     color: #999;
 }
 
-#fire{
-    height: 100px;
-    width: 100px;
+#fire, #weather{
+    height: 50;
+    width: 100%;
 }
 
 .first-card{
-    width: 50%
+    width: 50%;
 }
 
 .second-card{
