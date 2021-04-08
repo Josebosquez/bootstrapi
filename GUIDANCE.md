@@ -45,5 +45,5 @@ fetch(URL)
   * Make a GET request to that URL with `fetch` (syntax seen above)
   * When you handle the API response object
     * Individually query your `div`s for temperature, wind, and description
-    * Store the `.temperature` proprety of the API response object in the temperature div. Do the same for `.wind` and `.description`
+    * Store the `.temperature` property of the API response object in the temperature div. Do the same for `.wind` and `.description`
     
