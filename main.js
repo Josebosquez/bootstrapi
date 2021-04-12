@@ -58,10 +58,7 @@ wButton.addEventListener("click", function(){
         temp.innerHTML = "Temperature: " + city.temperature
         wind.innerHTML = "Wind: " + city.wind
         DD.innerHTML = "Data Description: " + city.description
-        if (city.temperature < 20){
-            ImageSrc = "/images/sunny.jpeg"
             console.log(ImageSrc)
-        }
     })    
 })
 
@@ -75,9 +72,18 @@ const photo = document.querySelector("#photo")
 const FF1 = document.querySelector("#fun1")
 const FF2 = document.querySelector("#fun2")
 const FF3 = document.querySelector("#fun3")
+const FF4 = document.querySelector("#fun4")
+
+
+// const randomValue = Math.random();
+
+// const getRandomNumber = (min, max) => {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// };
+
 
 //update img add event listener
-buttonRM.addEventListener("click", function (updateImg){
+buttonRM.addEventListener("click", function (){
     //step 1: send a get req to the api url
     const URL =  "https://rickandmortyapi.com/api/character"
     fetch(URL)
@@ -88,11 +94,11 @@ buttonRM.addEventListener("click", function (updateImg){
         return rawResponse.json()
     })
     //Step 3: Process JSON to replace img src with img message.
-    .then (function (updateImg){
-        photo.src = updateImg.results[4].image;
-        console.log(updateImg.results[4].image);
-        FF1.innerHTML = "Name of Character: " + updateImg.results[4].name
-        FF2.innerHTML = "Character's species: " + updateImg.results[4].species
-        FF3.innerHTML = "Character's origin: " + updateImg.results[4].origin.name
+    .then (function (lubbaDubbaDubDub){
+        photo.src = lubbaDubbaDubDub.results[3].image;
+        FF1.innerHTML = "Name of Character: " + lubbaDubbaDubDub.results[3].name
+        FF2.innerHTML = "Character's species: " + lubbaDubbaDubDub.results[3].species
+        FF3.innerHTML = "Character's origin: " + lubbaDubbaDubDub.results[3].origin.name
+        FF4.innerHTML = "Character's status: " + lubbaDubbaDubDub.results[3].status
     })    
 }) 
