@@ -102,3 +102,38 @@ buttonRM.addEventListener("click", function (){
         FF4.innerHTML = "Character's status: " + lubbaDubbaDubDub.results[3].status
     })    
 }) 
+
+
+// tried to use a number to get it to work and pull up a number
+// //queries 
+// const buttonRM = document.querySelector('.btn2')
+// const textID = document.querySelector("#textInputRM")  
+// const photo = document.querySelector("#photo")
+// const FF1 = document.querySelector("#fun1")
+// const FF2 = document.querySelector("#fun2")
+// const FF3 = document.querySelector("#fun3")
+// const FF4 = document.querySelector("#fun4")
+
+// //update img add event listener
+// buttonRM.addEventListener("click", function (){
+//     const id = textID.value;
+//     //step 1: send a get req to the api url
+//     const URL = `https://rickandmortyapi.com/api/character/${id}`;
+//     console.log(id)
+//     fetch(URL)
+    
+//     //step2: extract JSOm from the URL RESponse
+//     .then(function(rawResponse) {
+//         console.log("response:", rawResponse)
+//         return rawResponse.json()
+//     })
+//     //Step 3: Process JSON to replace img src with img message.
+//     .then (function (lubbaDubbaDubDub){
+//         photo.src = lubbaDubbaDubDub.results[`${id}`].image;
+//         console.log(photo)
+//         FF1.innerHTML = "Name of Character: " + lubbaDubbaDubDub.results[`${id}`].name
+//         FF2.innerHTML = "Character's species: " + lubbaDubbaDubDub.results[`${id}`].species
+//         FF3.innerHTML = "Character's origin: " + lubbaDubbaDubDub.results[`${id}`].origin.name
+//         FF4.innerHTML = "Character's status: " + lubbaDubbaDubDub.results[`${id}`].status
+//     })    
+// }) 
